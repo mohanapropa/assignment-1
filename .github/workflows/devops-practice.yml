@@ -12,5 +12,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Read and print hello.txt
+      - name: Read and output
         run: cat hello.txt
