@@ -1,0 +1,16 @@
+name: devops-practice
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  read-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Read and print hello.txt
+        run: cat hello.txt
